@@ -1,4 +1,4 @@
-name: muditatest1
+name: testMudita1
 language: java
 pipeline: build_bake_test_deployment:v0.1
 security:
@@ -30,7 +30,7 @@ test:
 deployment:
   skip: true
   continuous_deployment: true
-  service_name: mudita-test
+  service_name: testmudita1
   environments:
     prod:
       - type: qubeship_managed
