@@ -30,7 +30,7 @@ test:
 deployment:
   skip: true
   continuous_deployment: true
-  service_name: testmudita1
+  service_name: test
   environments:
     prod:
       - type: qubeship_managed
