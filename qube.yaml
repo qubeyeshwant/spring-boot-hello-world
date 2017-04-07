@@ -1,18 +1,30 @@
-name: testMudita1
+id: da69e1f7-338a-4ba5-a8de-cf74af9f5d21
+name: test2
+apptype: api
 language: java
+toolchain:
+  name: Qubeship-Java-Toolchain
+  id: 58e686f9acac5a0020e2b93b
+opinion:
+  name: Qubeship default opinion
+  id: 58e686fa13d0cc000b88a963
+endpoint:
+  name: Qubeship Sandbox Cluster
+  id: 58e698aa99fd82000b7a4206
+  type: target
 pipeline: build_bake_test_deployment:v0.1
 security:
-  keys_loc: "conf/"
+  keys_loc: conf/
 notification:
   type: slack
-  domain: 
+  domain: null
   channel: qubeship
 build:
   skip: false
   image:
     name: maven:3.3-jdk-8-onbuild
     onbuild:
-      - mvn package
+    - mvn package
   publish_artifact: target/
   lint: true
 bake:
@@ -20,20 +32,20 @@ bake:
   strategy: docker
   script: Dockerfile
   repositories:
-    - name: google
-      prefix: gcr.io/qubeship-partners
-      type: gcr
+  - name: google
+    prefix: gcr.io/qubeship-partners
+    type: gcr
 test:
   skip: true
   functional:
     provider: qubeship-sg
 deployment:
-  skip: true
+  skip: false
   continuous_deployment: true
   service_name: test
   environments:
     prod:
-      - type: qubeship_managed
-        id: 
-        template_id: qube_external_app_v1
-        srcRepo: google
+    - type: qubeship_managed
+      id: 58e698aa99fd82000b7a4206
+      template_id: qube_external_app_v1
+      srcRepo: google
