@@ -1,9 +1,9 @@
-id: 563f1ddc-ee8e-43a6-b40d-17ac5b0f6240
+id: f1c40d7c-3392-4402-803a-36e3bdbe7caa
 version: v2
-name: prjJava111
+name: test_javaPrj222
 apptype: api
 language: java
-containerName: prjjava111
+containerName: test-javaprj222
 toolchain:
   id: 58ed7c509839e20021c7ca3a
   name: Qubeship-Java-Toolchain
