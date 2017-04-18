@@ -1,9 +1,9 @@
-id: 4a61c2d9-77ad-4bb8-8f2d-a79d7165e4e8
+id: 563f1ddc-ee8e-43a6-b40d-17ac5b0f6240
 version: v2
-name: ydi_test_srv1
+name: prjJava111
 apptype: api
 language: java
-containerName: ydi-test-srv1
+containerName: prjjava111
 toolchain:
   id: 58ed7c509839e20021c7ca3a
   name: Qubeship-Java-Toolchain
