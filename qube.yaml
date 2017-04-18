@@ -1,0 +1,32 @@
+id: b1a0e620-361a-407e-bb9d-ec3fb216e71d
+version: v2
+name: test_prj_java1
+apptype: api
+language: java
+containerName: test-prj-java1
+toolchain:
+  id: 58ed7c509839e20021c7ca3a
+  name: Qubeship-Java-Toolchain
+opinion:
+  id: 58ed7c53e35a5f000ec452c8
+  name: Qubeship default opinion
+endpoint:
+  id: 58ed7c54238503000b74d7a5
+  name: Qubeship Sandbox Cluster
+  type: target
+variables:
+  - name: APP_VERSION
+    value: v0.1
+build:
+  compile:
+    publish:
+     - target/
+bake:
+  skip: false
+test:
+  skip: true
+deploy_to_qa:
+  skip: true
+deploy_to_prod:
+  skip: false
+
