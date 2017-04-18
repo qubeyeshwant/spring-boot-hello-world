@@ -1,4 +1,5 @@
 # Sample Spring Boot Application #
+update
 
 This sample Spring Boot application was written for a blog post describing how to create a Spring Boot application with IntelliJ.
 
