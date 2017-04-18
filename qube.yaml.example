@@ -1,17 +1,17 @@
-id: 4fb37884-3147-4d09-bfeb-e236130994bb
+id: 4a61c2d9-77ad-4bb8-8f2d-a79d7165e4e8
 version: v2
-name: jiang_spring
+name: ydi_test_srv1
 apptype: api
 language: java
-containerName: jiangspring
+containerName: ydi-test-srv1
 toolchain:
-  id: 58f1613b8ef1e700214218c8
+  id: 58ed7c509839e20021c7ca3a
   name: Qubeship-Java-Toolchain
 opinion:
-  id: 58f53cbfe936e0000b151351
+  id: 58ed7c53e35a5f000ec452c8
   name: Qubeship default opinion
 endpoint:
-  id: 58f16141238503000b74d7bf
+  id: 58ed7c54238503000b74d7a5
   name: Qubeship Sandbox Cluster
   type: target
 variables:
