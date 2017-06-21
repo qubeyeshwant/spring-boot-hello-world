@@ -8,8 +8,8 @@ toolchain:
   id: '58e56a68acac5a0020e2b930'
   name: 'Qubeship-Java-Toolchain'
 opinion:
-  id: '58f5cedee936e0000b151352'
-  name: 'Qubeship slack notification opinion'
+  id: '58e56f1d13d0cc000b88a95d'
+  name: 'Qubeship default opinion'
 endpoint:
   id: '58e574022f9f07000b226ded'
   name: 'Qubeship Sandbox Cluster'
