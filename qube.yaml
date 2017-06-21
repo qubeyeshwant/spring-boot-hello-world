@@ -1,26 +1,26 @@
-id: 8329fbc1-5d32-485b-b0ca-1976d2b3a203
-version: v2
-name: spring-hello-world
-apptype: api
-language: java
-containerName: spring-hello-world
+id: '8329fbc1-5d32-485b-b0ca-1976d2b3a203'
+version: 'v2'
+name: 'spring-hello-world'
+apptype: 'api'
+language: 'java'
+containerName: 'spring-hello-world'
 toolchain:
-  id: 58e56a68acac5a0020e2b930
-  name: Qubeship-Java-Toolchain
+  id: '58e56a68acac5a0020e2b930'
+  name: 'Qubeship-Java-Toolchain'
 opinion:
-  id: 
-  name: Default Opinion
+  id: '58f5cedee936e0000b151352'
+  name: 'Qubeship slack notification opinion'
 endpoint:
-  id: 58e574022f9f07000b226ded
-  name: Qubeship Sandbox Cluster
-  type: target
+  id: '58e574022f9f07000b226ded'
+  name: 'Qubeship Sandbox Cluster'
+  type: 'target'
 variables:
-  - name: APP_VERSION
-    value: v0.1
+- name: 'APP_VERSION'
+  value: 'v0.1'
 build:
   compile:
     publish:
-     - target/
+    - target/
 bake:
   skip: false
 test:
@@ -29,4 +29,3 @@ deploy_to_qa:
   skip: true
 deploy_to_prod:
   skip: false
-
